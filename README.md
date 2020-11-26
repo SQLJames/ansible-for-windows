@@ -24,12 +24,13 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     ---
-    - name: configure ansible-for-windows
+    - name: ansible-for-windows
       gather_facts: true
       hosts: localhost
       become: true
-    - include_role:
-        name: ansible-for-windows
+      roles:
+        - ansible-for-windows
+
 
 Extra Steps
 ----------------
