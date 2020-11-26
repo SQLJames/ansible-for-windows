@@ -1,0 +1,7 @@
+---
+- name: Install pywinrm
+  pip:
+    name: pywinrm>=0.3.0
+- name: Install pywinrm[kerberos]
+  pip:
+    name: pywinrm[kerberos]

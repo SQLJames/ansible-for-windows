@@ -1,0 +1,12 @@
+---
+- name: backup krb5.config
+  copy:
+    src: /etc/krb5.config
+    dest: /etc/krb5.config.backup
+- name: Configure krb5.config
+  template:
+    src: krb5.config.j2
+    dest: /etc/krb5.config
+    owner: root
+    group: root
+    mode: '0644'
